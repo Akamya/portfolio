@@ -53,6 +53,9 @@ export const BackgroundAnimation = () => {
         position: "absolute",
         inset: 0,
         zIndex: 0,
+        width: "100%",
+        height: "100%", // Force à prendre toute la hauteur du parent
+        clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
       }}
     />
   );

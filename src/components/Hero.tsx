@@ -2,15 +2,10 @@ import { BackgroundAnimation } from "./BackgroundAnimation";
 
 export const Hero = () => {
   return (
-    <section
-      className="relative h-[35rem] overflow-hidden"
-      style={{
-        clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
-      }}
-    >
+    <section className="relative h-[38rem]">
       <BackgroundAnimation />
 
-      <div className="relative z-10 flex items-center justify-center top-10 h-full text-white">
+      <div className="relative text-white flex items-center justify-center min-h-full pt-16">
         <div className="grid grid-cols-2 gap-8 max-w-5xl mx-auto px-6">
           {/* Image */}
           <div className="grid gap-4 justify-center">
