@@ -48,6 +48,15 @@ export const Skills = () => {
           </div>
         </div>
       </div>
+      <div>
+        <h2>I love being creative (emote)</h2>
+        <p>
+          I started creating blogs about online games when I was 12. Since then,
+          I've had a soft spot for creative design and developed a curiosity for
+          programming.
+        </p>
+        <a href="">Keep reading my bio →</a>
+      </div>
     </section>
   );
 };
