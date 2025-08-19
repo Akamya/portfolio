@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,33 +13,35 @@ export const Navbar = () => {
           Elodie Langlet
         </div>
 
+        {/* Desktop menu */}
         <div className="hidden md:flex gap-8 ml-auto pr-2">
-          <a
-            href="#hero"
+          <Link
+            to="/"
             className="text-sm font-medium text-gray-100 hover:text-gray-400 transition-colors duration-300 tracking-wide uppercase"
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="/about"
             className="text-sm font-medium text-gray-100 hover:text-gray-400 transition-colors duration-300 tracking-wide uppercase"
           >
             About
-          </a>
-          <a
-            href="#portfolio"
+          </Link>
+          <Link
+            to="/portfolio"
             className="text-sm font-medium text-gray-100 hover:text-gray-400 transition-colors duration-300 tracking-wide uppercase"
           >
             Portfolio
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="text-sm font-medium text-gray-100 hover:text-gray-400 transition-colors duration-300 tracking-wide uppercase"
           >
             Contact
-          </a>
+          </Link>
         </div>
 
+        {/* Mobile button */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -46,6 +49,7 @@ export const Navbar = () => {
             aria-label="Toggle menu"
           >
             {isOpen ? (
+              // Croix
               <svg
                 className="w-5 h-5"
                 fill="none"
@@ -60,6 +64,7 @@ export const Navbar = () => {
                 />
               </svg>
             ) : (
+              // Hamburger
               <svg
                 className="w-5 h-5"
                 fill="none"
@@ -78,37 +83,38 @@ export const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden animate-in slide-in-from-top-2 duration-200">
           <div className="flex flex-col items-end gap-6 py-8 px-8 bg-white/95 backdrop-blur-sm rounded-lg">
-            <a
-              href="#hero"
+            <Link
+              to="/"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 tracking-wide uppercase"
               onClick={() => setIsOpen(false)}
             >
               Home
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              to="/about"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 tracking-wide uppercase"
               onClick={() => setIsOpen(false)}
             >
               About
-            </a>
-            <a
-              href="#portfolio"
+            </Link>
+            <Link
+              to="/portfolio"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 tracking-wide uppercase"
               onClick={() => setIsOpen(false)}
             >
               Portfolio
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/contact"
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 tracking-wide uppercase"
               onClick={() => setIsOpen(false)}
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}
