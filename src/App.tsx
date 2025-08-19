@@ -3,6 +3,8 @@ import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Skills } from "./components/Skills";
 import { Card } from "./components/Card";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -36,7 +38,9 @@ function App() {
             />
           </div>
         </div>
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }
