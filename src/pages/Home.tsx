@@ -4,6 +4,7 @@ import { Skills } from "../components/Skills";
 import { Card } from "../components/Card";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
+import { About } from "../components/About";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <main className="grid justify-center w-full">
+        <About />
         <Skills />
         <div className=" bg-gray-100 grid items-center justify-center p-2">
           <h1 className="text-center text-4xl font-light text-gray-900 mb-16 tracking-wide">

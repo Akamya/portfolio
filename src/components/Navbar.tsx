@@ -7,8 +7,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed left-1/2 transform -translate-x-1/2 max-w-6xl w-full z-50 mx-6 top-6">
-      <div className="flex justify-between items-center px-6 py-4 md:px-8 md:py-6">
+    <nav className="fixed left-1/2 transform -translate-x-1/2 w-full z-50 bg-[#032230]/95">
+      <div className="flex justify-between items-center px-6 py-4 md:px-12 md:py-6 max-w-6xl mx-auto w-full">
         <div className="text-xl md:text-2xl font-bold text-gray-100 tracking-wide">
           Elodie Langlet
         </div>
@@ -26,6 +26,12 @@ export const Navbar = () => {
             className="text-sm font-medium text-gray-100 hover:text-gray-400 transition-colors duration-300 tracking-wide uppercase"
           >
             About
+          </Link>
+          <Link
+            to="/skills"
+            className="text-sm font-medium text-gray-100 hover:text-gray-400 transition-colors duration-300 tracking-wide uppercase"
+          >
+            Skills
           </Link>
           <Link
             to="/portfolio"
