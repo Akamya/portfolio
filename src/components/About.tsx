@@ -12,11 +12,11 @@ export const About = () => {
 
       <div className="grid md:grid-cols-[1fr_2fr]">
         {/* Colonne gauche = Image */}
-        <div className="flex justify-start">
+        <div className="flex justify-center md:justify-start">
           <img
             src="/images/moi.jpg"
             alt="Photo de moi"
-            className="rounded-2xl shadow-lg w-64 h-64 object-cover"
+            className="rounded-2xl shadow-lg w-64 h-64 object-cover mb-6"
           />
         </div>
 
