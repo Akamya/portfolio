@@ -1,6 +1,11 @@
 import { BackgroundAnimation } from "./BackgroundAnimation";
 
 export const Hero = () => {
+  const medias = [
+    { name: "GitHub", icon: "devicon-github-plain" },
+    { name: "linkedIn", icon: "devicon-linkedin-plain" },
+  ];
+
   return (
     <section className="relative h-auto md:h-[38rem]">
       <BackgroundAnimation />
@@ -16,11 +21,17 @@ export const Hero = () => {
             />
 
             <div className="flex justify-center gap-4">
-              {/* Icônes */}
-              <span className="w-6 h-6 md:w-8 md:h-8 bg-blue-500 rounded-full"></span>
-              <span className="w-6 h-6 md:w-8 md:h-8 bg-red-500 rounded-full"></span>
-              <span className="w-6 h-6 md:w-8 md:h-8 bg-green-500 rounded-full"></span>
-              <span className="w-6 h-6 md:w-8 md:h-8 bg-yellow-500 rounded-full"></span>
+              {medias.map((media) => (
+                <a
+                  key={media.name}
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-100 hover:text-gray-400 transition-colors duration-300"
+                >
+                  <i className={`${media.icon} text-2xl md:text-3xl`}></i>
+                </a>
+              ))}
             </div>
           </div>
 

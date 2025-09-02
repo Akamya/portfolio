@@ -29,7 +29,7 @@ export const Skills = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-10">
         {skills.map((skill) => (
           <div
             key={skill.name}
