@@ -1,62 +1,94 @@
 export const About = () => {
   return (
-    <section className="max-w-6xl w-full mx-auto py-16 px-6">
-      <div className="text-left mb-12">
-        <h1 className="text-2xl font-light text-gray-900 mb-6 tracking-wide">
-          ABOUT
-        </h1>
-        <h2 className="text-4xl font-light text-gray-900 tracking-wide">
-          Who is Elodie?
+    <section className="max-w-7xl w-full mx-auto py-20 px-6 ">
+      <div className="text-left mb-16">
+        <div className="flex items-center gap-4 mb-6">
+          <div className="w-12 h-0.5 bg-gradient-to-r from-blue-500 to-teal-500"></div>
+          <h1 className="text-sm font-bold text-blue-600 tracking-[0.2em] uppercase">
+            About Me
+          </h1>
+        </div>
+        <h2 className="text-5xl md:text-6xl font-light text-gray-900 tracking-tight leading-tight">
+          Who is{" "}
+          <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-semibold">
+            Elodie
+          </span>
+          ?
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-[1fr_2fr]">
-        {/* Colonne gauche = Image */}
+      <div className="grid md:grid-cols-[1fr_2fr] gap-12 md:gap-16 items-start">
         <div className="flex justify-center md:justify-start">
-          <img
-            src="/images/moi.jpg"
-            alt="Photo de moi"
-            className="rounded-2xl shadow-lg w-64 h-64 object-cover mb-6"
-          />
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-teal-400 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
+            <img
+              src="/images/moi.jpg"
+              alt="Photo de moi"
+              className="relative rounded-3xl shadow-2xl w-80 h-80 object-cover border-4 border-white"
+            />
+          </div>
         </div>
 
-        {/* Colonne droite = Paragraphe */}
-        <div className=" md:text-left max-w-xl">
-          <h2 className="text-2xl font-light mb-4">
-            I'm a curiosity-driven Front-End Developer at the beginning of my
-            journey. ✨
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            I enjoy transforming ideas into clean and visually appealing web
-            experiences using HTML, CSS, Tailwind, JavaScript, Vue.js and React.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            As a recent graduate in Web Development, I’m eager to keep learning
-            and improving every day. I may be at the start of my career, but I
-            care creating smooth user experiences and making things both
-            functional and beautiful.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            I like to build, experiment, and keep learning new skills. At the
-            moment, I’m focused on strengthening my front-end design and
-            development abilities, while considering user experience and
-            accessibility.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            I’m open to new opportunities where I can grow as a developer,
-            contribute to meaningful projects, and continue building my creative
-            and technical skills.
-          </p>
-          <div className="mt-8 text-center md:text-left">
-            <p className="mb-3 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">
+        <div className="space-y-6 md:text-left">
+          <h3 className="text-2xl md:text-3xl font-light text-gray-800 leading-relaxed">
+            I'm a curiosity-driven{" "}
+            <span className="text-blue-600 font-semibold">
+              Front-End Developer
+            </span>{" "}
+            at the beginning of my journey. ✨
+          </h3>
+
+          <div className="space-y-5 text-gray-700 leading-relaxed text-lg">
+            <p>
+              I enjoy transforming ideas into clean and visually appealing web
+              experiences using{" "}
+              <span className="font-semibold text-gray-800">
+                HTML, CSS, Tailwind, JavaScript, Vue.js and React
+              </span>
+              .
+            </p>
+            <p>
+              As a recent graduate in Web Development, I'm eager to keep
+              learning and improving every day. I may be at the start of my
+              career, but I care creating smooth user experiences and making
+              things both functional and beautiful.
+            </p>
+            <p>
+              I like to build, experiment, and keep learning new skills. At the
+              moment, I'm focused on strengthening my front-end design and
+              development abilities, while considering user experience and
+              accessibility.
+            </p>
+            <p>
+              I'm open to new opportunities where I can grow as a developer,
+              contribute to meaningful projects, and continue building my
+              creative and technical skills.
+            </p>
+          </div>
+
+          <div className="mt-10 pt-8 border-t border-gray-200">
+            <p className="mb-6 text-lg font-medium text-gray-600">
               Not into reading the whole bio?
             </p>
 
             <a
               href="/cv-elodie-langlet.pdf"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:from-teal-400 hover:to-blue-500"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 hover:from-teal-600 hover:to-blue-600"
             >
-              Get my CV →
+              <span>Download my CV</span>
+              <svg
+                className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
             </a>
           </div>
         </div>

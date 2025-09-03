@@ -9,7 +9,7 @@ import { About } from "../components/About";
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="bg-gradient-to-br from-gray-50 to-blue-50/30">
         <Navbar />
         <Hero />
         <main className="grid justify-center w-full">
