@@ -16,7 +16,7 @@ export const Hero = () => {
       <div className="relative text-white flex flex-col md:flex-row items-center justify-center min-h-full px-6 md:px-8 gap-12 md:gap-20 max-w-7xl mx-auto">
         <div className="flex flex-col items-center gap-8 transform hover:scale-105 transition-transform duration-500">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 via-teal-400 to-cyan-400 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+            <div className="absolute -inset-1 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
             <img
               src="/eloillustration.jpg"
               alt="Illustration IA d'Elodie"
