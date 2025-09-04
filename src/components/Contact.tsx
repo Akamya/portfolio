@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section className="py-20 px-6 ">
+    <section id="contact" className="py-20 px-6 ">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">

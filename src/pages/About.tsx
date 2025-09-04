@@ -6,7 +6,6 @@ const About = () => {
     <>
       <Navbar />
       <main className="w-full min-h-screen bg-blue-100 text-gray-800 flex justify-center">
-        {/* Container centré horizontalement, largeur max */}
         <div className="w-full max-w-3xl mx-auto px-6 py-16 bg-white ">
           <h1 className="text-4xl font-bold mb-4 mt-20 text-center">
             Looking for my CV ?

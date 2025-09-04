@@ -35,7 +35,7 @@ export const Skills = () => {
   ];
 
   return (
-    <section className="py-20 px-6 ">
+    <section id="skills" className="py-20 px-6 ">
       <div className="max-w-7xl mx-auto">
         <div className="text-left mb-16">
           <div className="flex items-center gap-4 mb-6">

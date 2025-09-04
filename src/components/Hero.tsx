@@ -7,7 +7,10 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen md:h-[42rem] pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen md:h-[42rem] pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden"
+    >
       <BackgroundAnimation />
 
       <div className="relative text-white flex flex-col md:flex-row items-center justify-center min-h-full px-6 md:px-8 gap-12 md:gap-20 max-w-7xl mx-auto">
