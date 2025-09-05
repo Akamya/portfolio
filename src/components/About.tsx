@@ -20,9 +20,9 @@ export const About = () => {
       <div className="grid md:grid-cols-[1fr_2fr] gap-12 md:gap-16 items-start">
         <div className="flex justify-center md:justify-start">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-teal-400 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
+            <div className="absolute -inset-1  rounded-3xl opacity-25 group-hover:opacity-40 transition duration-500"></div>
             <img
-              src="/images/moi.jpg"
+              src="/elodielanglet.jpg"
               alt="Photo de moi"
               className="relative rounded-3xl shadow-2xl w-80 h-80 object-cover border-4 border-white"
             />
@@ -76,19 +76,7 @@ export const About = () => {
               className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 hover:from-teal-600 hover:to-blue-600"
             >
               <span>Download my CV</span>
-              <svg
-                className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
+              <i className="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>

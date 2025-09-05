@@ -18,46 +18,51 @@ export const Cards = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl">
-            Here are some projects that showcase my skills and passion for
-            creating beautiful, functional web experiences.
+            Here are some projects that showcase my skills for creating
+            functional web experiences.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
           <Card
-            title="Portfolio Website"
-            description="A modern portfolio website built with React + Tailwind CSS, featuring smooth animations and responsive design."
-            image="https://via.placeholder.com/400x250/3B82F6/FFFFFF?text=Portfolio"
-            link="#"
-            github="#"
-          />
-          <Card
             title="TFT Challenge Generator"
-            description="An interactive challenge generator for Teamfight Tactics with dynamic content and engaging user interface."
-            image="https://via.placeholder.com/400x250/14B8A6/FFFFFF?text=TFT+Generator"
-            link="#"
-            github="#"
+            description="An interactive web app that lets players generate random challenges to spice up their Teamfight Tactics games. Each challenge includes a class, an origin, and unique constraints, with the option to reroll. Logged-in users can track their scores, view their history, and appear on a leaderboard. Built with Laravel, Vue.js, Inertia, and Tailwind CSS, it combines a solid backend with a modern, responsive UI."
+            image="/tftchallenge.jpg"
+            link="https://tft-operation.elolan.ovh/"
+            github="https://github.com/Akamya/generateur-challenge-tft"
+            technologies={["laravel", "vue", "mysql", "api", "tailwind"]}
           />
           <Card
-            title="E-commerce UI"
+            title="Mini ChatGPT"
             description="A responsive e-commerce interface prototype with modern design patterns and intuitive user experience."
-            image="https://via.placeholder.com/400x250/8B5CF6/FFFFFF?text=E-commerce"
-            link="#"
-            github="#"
+            image="/chatgpt.jpg"
+            link="https://project-ai.elolan.ovh/login"
+            github=""
+            technologies={["laravel", "vue", "mysql", "api", "tailwind"]}
           />
           <Card
-            title="Task Management App"
-            description="A productivity app with drag-and-drop functionality, real-time updates, and collaborative features."
-            image="https://via.placeholder.com/400x250/F59E0B/FFFFFF?text=Task+Manager"
-            link="#"
-            github="#"
+            title="Mini Instagram"
+            description="A responsive e-commerce interface prototype with modern design patterns and intuitive user experience."
+            image="/miniinstagram.jpg"
+            link="https://mini-instagram.elolan.ovh/"
+            github="https://github.com/Akamya/laravel-mini-instagram"
+            technologies={["laravel", "mysql", "tailwind"]}
           />
           <Card
-            title="Weather Dashboard"
+            title="CatCrocs e-commerce"
             description="A beautiful weather application with location-based forecasts and interactive data visualizations."
-            image="https://via.placeholder.com/400x250/EF4444/FFFFFF?text=Weather+App"
-            link="#"
-            github="#"
+            image="/catshoes.jpg"
+            link="https://js-ecommerce-project.vercel.app/produits"
+            github="https://github.com/Akamya/js_ecommerce_project"
+            technologies={["javascript", "css"]}
+          />
+          <Card
+            title="CatCrocs"
+            description="A productivity app with drag-and-drop functionality, real-time updates, and collaborative features."
+            image="/catcrocs.jpg"
+            link="http://minisite.elolan.ovh/"
+            github="https://github.com/Akamya/catcrocs"
+            technologies={["javascript", "css"]}
           />
           <Card
             title="Recipe Finder"
@@ -65,6 +70,7 @@ export const Cards = () => {
             image="https://via.placeholder.com/400x250/10B981/FFFFFF?text=Recipe+Finder"
             link="#"
             github="#"
+            technologies={["javascript", "css"]}
           />
         </div>
       </div>

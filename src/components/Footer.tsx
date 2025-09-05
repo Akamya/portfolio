@@ -1,7 +1,11 @@
 export const Footer = () => {
   const medias = [
-    { name: "GitHub", icon: "devicon-github-plain" },
-    { name: "LinkedIn", icon: "devicon-linkedin-plain" },
+    {
+      name: "GitHub",
+      icon: "devicon-github-plain",
+      url: "https://github.com/Akamya",
+    },
+    { name: "LinkedIn", icon: "devicon-linkedin-plain", url: "" },
   ];
 
   return (
@@ -23,19 +27,7 @@ export const Footer = () => {
             href="mailto:elodie.langlet@gmail.com"
             className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
+            <i className="fa-solid fa-envelope"></i>
             Get In Touch
           </a>
         </div>
@@ -54,20 +46,23 @@ export const Footer = () => {
             <p className="text-sm text-blue-200 mb-2">
               © 2025 All rights reserved
             </p>
-            <p className="text-xs text-blue-300">Made with ❤️ and lots of ☕</p>
+            <p className="text-xs text-blue-300">Made with ❤️ and lots of 🍵</p>
           </div>
 
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-2">
             {medias.map((media) => (
               <a
                 key={media.name}
-                href="#"
+                href={media.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group p-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-gray-100 hover:text-white hover:bg-white/20 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="group relative p-3 transition-all duration-300 hover:scale-110"
               >
-                <i className={`${media.icon} text-xl`}></i>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-teal-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <i
+                  className={`${media.icon} text-2xl md:text-3xl text-gray-100 transition-all duration-300 
+                   group-hover:text-transparent group-hover:bg-clip-text 
+                   group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-teal-400`}
+                ></i>
               </a>
             ))}
           </div>

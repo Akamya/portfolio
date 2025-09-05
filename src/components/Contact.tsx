@@ -30,19 +30,7 @@ export const Contact = () => {
                 href="mailto:elodie.langlet@gmail.com"
                 className="group inline-flex items-center gap-3 text-2xl md:text-3xl font-bold text-blue-600 hover:text-teal-600 transition-colors duration-300"
               >
-                <svg
-                  className="w-8 h-8 group-hover:scale-110 transition-transform duration-300"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
+                <i className="fa-solid fa-envelope"></i>
                 elodie.langlet@gmail.com
               </a>
 
@@ -56,11 +44,11 @@ export const Contact = () => {
 
           <div className="flex justify-center md:justify-end">
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-teal-400 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
+              <div className="absolute -inset-1 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
               <img
                 src="/eloandtaiga.jpeg"
                 alt="Contact Illustration"
-                className="relative w-80 h-80 object-cover rounded-3xl shadow-2xl border-4 border-white transform group-hover:scale-105 transition-transform duration-500"
+                className="relative w-80 h-80 object-cover rounded-3xl shadow-2xl border-4 border-white transform"
               />
             </div>
           </div>
