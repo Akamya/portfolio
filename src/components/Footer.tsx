@@ -28,12 +28,13 @@ export const Footer = () => {
             className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             <i className="fa-solid fa-envelope"></i>
-            Get In Touch
+            Get in touch
           </a>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-center md:text-left">
+        {/* Desktop layout */}
+        <div className="hidden md:grid grid-cols-3 items-center gap-6">
+          <div className="text-left">
             <p className="text-2xl font-bold text-gray-100 tracking-wide mb-2">
               Elodie Langlet
             </p>
@@ -49,7 +50,7 @@ export const Footer = () => {
             <p className="text-xs text-blue-300">Made with ❤️ and lots of 🍵</p>
           </div>
 
-          <div className="flex justify-center gap-2">
+          <div className="flex justify-end gap-2">
             {medias.map((media) => (
               <a
                 key={media.name}
@@ -65,6 +66,43 @@ export const Footer = () => {
                 ></i>
               </a>
             ))}
+          </div>
+        </div>
+
+        {/* Mobile layout */}
+        <div className="md:hidden space-y-6">
+          <div className="text-center">
+            <p className="text-xl font-bold text-gray-100 tracking-wide mb-2">
+              Elodie Langlet
+            </p>
+            <p className="text-blue-200 text-sm">
+              Front-End Developer & UI/UX Enthusiast
+            </p>
+          </div>
+
+          <div className="flex justify-center gap-4">
+            {medias.map((media) => (
+              <a
+                key={media.name}
+                href={media.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative p-3 transition-all duration-300 hover:scale-110"
+              >
+                <i
+                  className={`${media.icon} text-2xl text-gray-100 transition-all duration-300 
+                   group-hover:text-transparent group-hover:bg-clip-text 
+                   group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-teal-400`}
+                ></i>
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <p className="text-sm text-blue-200 mb-2">
+              © 2025 All rights reserved
+            </p>
+            <p className="text-xs text-blue-300">Made with ❤️ and lots of 🍵</p>
           </div>
         </div>
       </div>

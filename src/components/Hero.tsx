@@ -66,14 +66,14 @@ export const Hero = () => {
               href="#portfolio"
               className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden "
             >
-              <span className="relative z-10">View My Work</span>
+              <span className="relative z-10">View my work</span>
               <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
               href="#contact"
               className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
             >
-              Get In Touch
+              Get in touch
             </a>
           </div>
         </div>

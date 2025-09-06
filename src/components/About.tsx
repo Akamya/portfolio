@@ -66,9 +66,9 @@ export const About = () => {
             </p>
           </div>
 
-          <div className="mt-10 pt-8 border-t border-gray-200">
-            <p className="mb-6 text-lg font-medium text-gray-600">
-              Not into reading the whole bio?
+          <div className="mt-10 pt-8 border-t border-gray-200 text-center md:text-left">
+            <p className="mb-6 text-lg text-gray-600 font-semibold">
+              Let's get straight to the point! 😉
             </p>
 
             <a

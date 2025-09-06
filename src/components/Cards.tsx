@@ -26,7 +26,7 @@ export const Cards = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
           <Card
             title="TFT Challenge Generator"
-            description="An interactive web app that lets players generate random challenges to spice up their Teamfight Tactics games. Each challenge includes a class, an origin, and unique constraints, with the option to reroll. Logged-in users can track their scores, view their history, and appear on a leaderboard. Built with Laravel, Vue.js, Inertia, and Tailwind CSS, it combines a solid backend with a modern, responsive UI."
+            description="An interactive web app that generates random challenges to spice up Teamfight Tactics games, with automatic validation."
             image="/tftchallenge.jpg"
             link="https://tft-operation.elolan.ovh/"
             github="https://github.com/Akamya/generateur-challenge-tft"
@@ -34,7 +34,7 @@ export const Cards = () => {
           />
           <Card
             title="Mini ChatGPT"
-            description="A responsive e-commerce interface prototype with modern design patterns and intuitive user experience."
+            description="A web interface prototype that lets users chat with free AI models, featuring contextual conversations and custom commands."
             image="/chatgpt.jpg"
             link="https://project-ai.elolan.ovh/login"
             github=""
@@ -42,15 +42,23 @@ export const Cards = () => {
           />
           <Card
             title="Mini Instagram"
-            description="A responsive e-commerce interface prototype with modern design patterns and intuitive user experience."
+            description="A social media prototype with core features such as posts, comments, likes, and follow functionality."
             image="/miniinstagram.jpg"
             link="https://mini-instagram.elolan.ovh/"
             github="https://github.com/Akamya/laravel-mini-instagram"
             technologies={["laravel", "mysql", "tailwind"]}
           />
           <Card
+            title="Mini Ticketmaster - Taylor Swift"
+            description="My first designed static landing page project. This project helped me practice visual design and clean HTML/CSS implementation."
+            image="/ticketmaster.jpg"
+            link="https://ticketmaster-ts.vercel.app/"
+            github="https://github.com/Akamya/ticketmasterTS"
+            technologies={["html", "css"]}
+          />
+          <Card
             title="CatCrocs e-commerce"
-            description="A beautiful weather application with location-based forecasts and interactive data visualizations."
+            description="A simple e-commerce app featuring product listings, filters, a search engine, and shopping cart management."
             image="/catshoes.jpg"
             link="https://js-ecommerce-project.vercel.app/produits"
             github="https://github.com/Akamya/js_ecommerce_project"
@@ -58,18 +66,10 @@ export const Cards = () => {
           />
           <Card
             title="CatCrocs"
-            description="A productivity app with drag-and-drop functionality, real-time updates, and collaborative features."
+            description="A multi-page project where I learned client-side routing and implemented a contact form, improving my understanding of web navigation."
             image="/catcrocs.jpg"
             link="http://minisite.elolan.ovh/"
             github="https://github.com/Akamya/catcrocs"
-            technologies={["javascript", "css"]}
-          />
-          <Card
-            title="Recipe Finder"
-            description="A recipe discovery platform with advanced search filters, favorites system, and meal planning features."
-            image="https://via.placeholder.com/400x250/10B981/FFFFFF?text=Recipe+Finder"
-            link="#"
-            github="#"
             technologies={["javascript", "css"]}
           />
         </div>

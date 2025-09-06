@@ -46,7 +46,7 @@ export const Contact = () => {
             <div className="relative group">
               <div className="absolute -inset-1 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
               <img
-                src="/eloandtaiga.jpeg"
+                src="/catcoffee.jpg"
                 alt="Contact Illustration"
                 className="relative w-80 h-80 object-cover rounded-3xl shadow-2xl border-4 border-white transform"
               />

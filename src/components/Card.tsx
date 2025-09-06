@@ -23,6 +23,7 @@ const TechIcon = ({ tech }: { tech: string }) => {
     mysql: <i className="devicon-mysql-original text-white"></i>,
     api: <i className="fa-solid fa-gears text-white"></i>,
     css: <i className="devicon-css3-plain"></i>,
+    html: <i className="devicon-html5-plain"></i>,
   };
 
   return (
