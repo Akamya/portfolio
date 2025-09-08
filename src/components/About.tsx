@@ -71,13 +71,29 @@ export const About = () => {
               Let's get straight to the point! 😉
             </p>
 
-            <a
-              href="/cv-elodie-langlet.pdf"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 hover:from-teal-600 hover:to-blue-600"
-            >
-              <span>Download my CV</span>
-              <i className="fa-solid fa-arrow-right"></i>
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
+              {/* CV Anglais */}
+              <a
+                href="/CV_elodielanglet_ENG.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-3 px-8 py-4 w-45 bg-gradient-to-r from-teal-600 to-blue-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 hover:from-blue-600 hover:to-teal-600"
+              >
+                <span>CV English</span>
+                <i className="fa-solid fa-file-pdf"></i>
+              </a>
+
+              {/* CV Français */}
+              <a
+                href="/CV_elodielanglet_FR.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-3 px-8 py-4 w-45 bg-gradient-to-r from-blue-600 to-teal-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105 hover:from-teal-600 hover:to-blue-600"
+              >
+                <span>CV Français</span>
+                <i className="fa-solid fa-file-pdf"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>

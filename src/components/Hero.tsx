@@ -7,7 +7,11 @@ export const Hero = () => {
       icon: "devicon-github-plain",
       url: "https://github.com/Akamya",
     },
-    { name: "LinkedIn", icon: "devicon-linkedin-plain", url: "" },
+    {
+      name: "LinkedIn",
+      icon: "devicon-linkedin-plain",
+      url: "https://www.linkedin.com/in/elodie-langlet-31746b383/",
+    },
   ];
 
   return (
@@ -61,17 +65,17 @@ export const Hero = () => {
             Always exploring, always improving — and I love cats 🐱
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-8 items-center">
             <a
               href="#portfolio"
-              className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden "
+              className="group relative w-45 px-8 py-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden text-center"
             >
               <span className="relative z-10">View my work</span>
               <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
+              className="w-45 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm text-center"
             >
               Get in touch
             </a>

@@ -66,7 +66,7 @@ export const Cards = () => {
           />
           <Card
             title="CatCrocs"
-            description="A multi-page project where I learned client-side routing and implemented a contact form, improving my understanding of web navigation."
+            description="My first multi-page project where I learned client-side routing and implemented a contact form, improving my understanding of web navigation."
             image="/catcrocs.jpg"
             link="http://minisite.elolan.ovh/"
             github="https://github.com/Akamya/catcrocs"

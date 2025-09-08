@@ -5,7 +5,11 @@ export const Footer = () => {
       icon: "devicon-github-plain",
       url: "https://github.com/Akamya",
     },
-    { name: "LinkedIn", icon: "devicon-linkedin-plain", url: "" },
+    {
+      name: "LinkedIn",
+      icon: "devicon-linkedin-plain",
+      url: "https://www.linkedin.com/in/elodie-langlet-31746b383/",
+    },
   ];
 
   return (
