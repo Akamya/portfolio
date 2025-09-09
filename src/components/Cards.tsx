@@ -66,7 +66,7 @@ export const Cards = () => {
           />
           <Card
             title="Pokédex Explorer"
-            description="My first multi-page project where I learned client-side routing and implemented a contact form, improving my understanding of web navigation."
+            description="Built a basic Vue.js app using the PokéAPI, featuring loading state management and error handling."
             image="/pokemon.jpg"
             link="https://pokedex-elolan.vercel.app/"
             github="https://github.com/Akamya/pokemon"
