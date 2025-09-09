@@ -37,7 +37,7 @@ export const Cards = () => {
             description="A web interface prototype that lets users chat with free AI models, featuring contextual conversations and custom commands."
             image="/chatgpt.jpg"
             link="https://project-ai.elolan.ovh/login"
-            github=""
+            github="https://github.com/Akamya/mini-chatgpt"
             technologies={["laravel", "vue", "mysql", "api", "tailwind"]}
           />
           <Card
@@ -57,7 +57,7 @@ export const Cards = () => {
             technologies={["html", "css"]}
           />
           <Card
-            title="CatCrocs e-commerce"
+            title="CatShoes e-commerce"
             description="A simple e-commerce app featuring product listings, filters, a search engine, and shopping cart management."
             image="/catshoes.jpg"
             link="https://js-ecommerce-project.vercel.app/produits"
@@ -65,12 +65,12 @@ export const Cards = () => {
             technologies={["javascript", "css"]}
           />
           <Card
-            title="CatCrocs"
+            title="Pokédex Explorer"
             description="My first multi-page project where I learned client-side routing and implemented a contact form, improving my understanding of web navigation."
-            image="/catcrocs.jpg"
-            link="http://minisite.elolan.ovh/"
-            github="https://github.com/Akamya/catcrocs"
-            technologies={["javascript", "css"]}
+            image="/pokemon.jpg"
+            link="https://pokedex-elolan.vercel.app/"
+            github="https://github.com/Akamya/pokemon"
+            technologies={["vue", "api", "tailwind"]}
           />
         </div>
       </div>
